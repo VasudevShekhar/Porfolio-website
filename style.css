@@ -1,0 +1,323 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+::selection {
+    color: white;
+    background-color: black;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+@media only screen and (max-width:75em) {
+    html {
+    font-size: 59%}
+}@media only screen and (max-width:56.25em) {
+    html {
+    font-size: 56%}
+}@media only screen and (min-width:112.5em) {
+    html {
+    font-size: 65%}
+}body {
+    line-height: 1.5;
+    font-family: 'Roboto Mono', sans-serif;
+}
+/* header */
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #000;
+    background: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+}
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+@media only screen and (max-width:56.25em) {
+    .header_content {
+        padding: 0 2rem;
+    }
+}
+.header_logo_cont {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.header_logo_cont:hover {
+   color: blue;
+}
+.header_logo_img_cont {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    background: yellow;
+}
+@media only screen and (max-width:56.25rem) {
+    .header_logo_img_cont {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: 1.2rem;
+    }
+}
+.header_logo_img {
+    width: 100%;
+    height: 100%;
+    -o-object-position:center;
+    object-position: center;
+    display: block;
+}
+.header_logo_name {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.header_links {
+    display: flex;
+}
+@media only screen and (max-width:37.5em) {
+    .header_links {
+        display: none;
+    }
+}
+.header_link {
+    padding: 2.2rem 3rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s;
+    list-style-type: none;
+}
+.header_link:hover {
+color: blue;
+}
+@media only screen and (max-width:56.25em) {
+    .header_link {
+    padding: 3rem 1.8rem;
+    font-size: 1.2rem;
+}
+}
+.header_menu_burger {
+    display: none;
+    width: 3rem;
+    padding:2.2rem 0;
+}
+@media only screen and (max-width:37.5em) {
+
+.header_menu_burger {
+    display: block;
+}
+}
+.header_menu_open {
+    width: 100%;
+}
+.header_menu_close {
+
+    width: 100%;
+}
+.header_menu {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
+}
+.d-none {
+    display: none;
+}
+.header_menu--active {
+    visibility: hidden;
+    opacity: 0;
+}
+@media only screen and (max-width:37.5em) {
+    .header_menu--active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.header_menu_link a {
+    display:block;
+    text-decoration: none;
+    padding: 2.5rem 3rem;
+    font-size: 1.4rem;
+    color: black;
+    text-align: right;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color .3s;
+}
+.header_menu_link a:hover {
+    color: blue;
+}
+.header_menu_link:first-child a {
+     border-top: 1px solid black;
+}
+.header_menu_link-last {
+    border-bottom: 0;
+}
+
+/* About + introduction */
+
+#About {    
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    background-color: #EEEEEE;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);    
+}
+.intro_div {
+    display: block;
+    margin: 30px;
+    text-align: center;
+}
+@media only screen and (max-width:37.5em) {
+    .intro_div {
+        font-size: 2rem;        
+    }
+}
+.intro_name {
+    font-size: 10rem;
+    padding-top: 400px;
+    color: blue;
+}
+@media only screen and (max-width:37.5em) {
+    .intro_name {
+        padding-top: 100px;
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+}
+@media only screen and (max-width:56.255em) {
+    .intro_name {
+        padding-top: 200px;
+        font-size: 8rem;
+        padding-bottom: 10px;
+    }
+}
+.intro_p {
+font-size: 2rem;
+}
+
+/******Projects DIV*******/
+
+#Projects {
+background-color: white;
+width: 100%;
+margin: auto;
+padding-top: 100vh;
+}
+
+.Project_header {
+    text-align: center;
+    font-size: 3rem;
+    padding: 40px;
+    font-weight: 800;
+}
+
+.Project_div_content {
+margin: 50px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 5rem;
+text-align: center;
+grid-auto-rows: minmax(100px auto);
+justify-items: stretch;
+align-items: stretch;
+}
+@media only screen and (max-width:56.25em){
+    .Project_div_content {
+        grid-template-columns: 1fr 1fr;
+        grid-gap:3rem;
+        margin: 50px;
+    }
+}
+@media only screen and (max-width:37.5em) {
+    .Project_div_content {
+        grid-template-columns: 1fr;
+        grid-gap:3rem;
+        margin: 50px;
+    }
+}
+.Projects_div_type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 5px 5px rgb(205, 200, 200);
+}
+
+.Projects_content_img {
+    width: 100%;
+    height: 100%px;
+}
+.Project_title {
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width:37.5em) {
+    .Project_title {
+    font-size: 1.8rem
+    }
+}
+.Project_des {
+    font-size: 1.5rem;
+    padding: 3px;
+    color: #666;
+    max-width: 30rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+/* Footer/contacts */
+
+#contacts {
+    background-color: #EEEEEE;
+}
+.social-heading {
+    padding-top: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 100;
+
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: spac;
+}
+.social_icon {
+    width: 30px;
+    height: 30px;
+    margin: 20px;   
+}
