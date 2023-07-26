@@ -1,137 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Vasudev Shekhar" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="description" content="Portfolio website of Vasudev Shekhar" />
+    <meta name="author" content="Vasudev Shekhar" />
+    <title>Vasudev Shekhar</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Vasudev Shekhar">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <meta name="description" content="Portfolio website of Vasudev Shekhar">
-  <meta name="author" content="Vasudev Shekhar">
-  <title>Vasudev Shekhar</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header_content">
-      <div class="header_logo_cont">
-        <div class="header_logo_img_cont">
-          <img class="header_logo_img" src="./images/vdv.png" alt="Vasudev">
+  <body>
+    <header class="header">
+      <div class="header_content">
+        <div class="header_logo_cont">
+          <div class="header_logo_img_cont">
+            <img class="header_logo_img" src="./images/vdv.png" alt="Vasudev" />
+          </div>
+          <span class="header_logo_name">Vasudev Shekhar</span>
         </div>
-        <span class="header_logo_name">Vasudev Shekhar</span>
-      </div>
-      <div class="header_main">
-        <ul class="header_links">
-          <li class="header_link_wrapper"><a class="header_link" href="#About">About</a></li>
-          <li class="header_link_wrapper"><a class="header_link" href="#Projects">Projects</a></li>
-          <li class="header_link_wrapper"><a class="header_link" href="#contacts">Contact</a></li>
-        </ul>
-        <div class="header_menu_burger">
-          <img class="header_menu_open" src="./images/hamburger.png" alt="hamburger_menu">
-          <img class="header_menu_close d-none" src="./images/close.png" alt="hamburger_menu_closed">
-        </div>
-      </div>
-    </div>
-    <div class="header_menu">
-      <div class="header_menu_content">
-        <ul class="header_menu_links">
-          <li class="header_menu_link">
-            <a href="#About">About</a>
-          </li>
-          <li class="header_menu_link">
-            <a href="#Projects">Projects</a>
-          </li>
-          <li class="header_menu_link">
-            <a href="#contacts">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section id="About">
-    <div class="intro_div">
-
-      <h1 class="intro_name">Hi I'm <br> Vasudev Shekhar</h1>
-
-
-      <p class="intro_p">A Frontend Web Developer. I love to build new projects
-        and Replit just to tickle my brain.
-      </p>
-
-    </div>
-  </section>
-  <section id="Projects">
-    <div class="Projects_div">
-      <h1 class="Project_header">Some of my projects</h1>
-      <div class="Project_div_content">
-        <div class="Projects_div_type">
-          <a href="https://technotes-31ea.onrender.com/"><img class="Projects_content_img" src="./images/dand.jpg"
-              alt=""></a>
-          <h3 class="Project_title">Technotes App</h3>
-          <p class="Project_des">The backend was built with MongoDB, Express and Node, with authentication being handled by jwt and security with bcrypt. The front end was built with React and React-Redux. Authorization was built using jwt-decode and redux.</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://tgpkhu.csb.app/"><img class="Projects_content_img" src="./images/keeperapp.jpg" alt=""></a>
-          <h3 class="Project_title">Keeper App</h3>
-          <p class="Project_des">Application to keep notes.</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://github-user-finder-gray.vercel.app/"><img class="Projects_content_img" src="./images/githubuser.jpg"
-              alt=""></a>
-          <h3 class="Project_title">Github User Finder</h3>
-          <p class="Project_des">Designed & built a the application for searching github users using customized hooks and github API.</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://vasudevshekhar.github.io/TinDog/"><img class="Projects_content_img" src="./images/portfolio.jpg"
-              alt=""></a>
-          <h3 class="Project_title">Portfolio Website</h3>
-          <p class="Project_des">Built using HTML, CSS and VanillaJS</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://breakingbadvdv.netlify.app/"><img class="Projects_content_img" src="./images/breakingbadscreen.png"
-              alt=""></a>
-          <h3 class="Project_title">Lets Play with APIs: Breaking Bad</h3>
-          <p class="Project_des">Designed & built a the application using Axios and React-Hooks to display characters of a Sci-fic...</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://Hoverboard.vasudevshekhar.repl.co"><img class="Projects_content_img" src="./images/hoverboard.jpg"
-              alt=""></a>
-          <h3 class="Project_title">Hoverboard</h3>
-          <p class="Project_des">VanillaJS driven DOM manipulation.</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://vasudevshekhar.github.io/Tip-Calculator/"><img class="Projects_content_img"
-              src="./images/tipcalculator.jpg" alt=""></a>
-          <h3 class="Project_title">Tip Calculator</h3>
-          <p class="Project_des">It calculates how much tip you should give at a restaurant.</p>
-        </div>
-        <div class="Projects_div_type">
-          <a href="https://vasudevshekhar.github.io/TinDog/"><img class="Projects_content_img" src="./images/tindog.jpg"
-              alt=""></a>
-          <h3 class="Project_title">TinDog Website</h3>
-          <p class="Project_des">A tinder Like webpage for dogs. Built using HTML, CSS and Bootstrap</p>
+        <div class="header_main">
+          <ul class="header_links">
+            <li class="header_link_wrapper">
+              <a class="header_link" href="#About">About</a>
+            </li>
+            <li class="header_link_wrapper">
+              <a class="header_link" href="#Projects">Projects</a>
+            </li>
+            <li class="header_link_wrapper">
+              <a class="header_link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+          <div class="header_menu_burger">
+            <img
+              class="header_menu_open"
+              src="./images/hamburger.png"
+              alt="hamburger_menu"
+            />
+            <img
+              class="header_menu_close d-none"
+              src="./images/close.png"
+              alt="hamburger_menu_closed"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer id="contacts">
-    <div class="social-heading">
-      <h2>Made with ❤️ in India</h2>
-    </div>
-    <div class="social">
-      <a class="social_icon" href="https://www.linkedin.com/in/vasudevshekhar/"><img src="./icons/linkedin-in.svg"
-          alt="linkedin"></a>
-      <a class="social_icon" href="https://github.com/VasudevShekhar"><img src="./icons/github.svg" alt="github"></a>
-      <a class="social_icon" href="https://twitter.com/Vasudevshekharr"><img src="./icons/twitter.svg"
-          alt="twitter"></a>
-    </div>
-  </footer>
+      <div class="header_menu">
+        <div class="header_menu_content">
+          <ul class="header_menu_links">
+            <li class="header_menu_link">
+              <a href="#About">About</a>
+            </li>
+            <li class="header_menu_link">
+              <a href="#Projects">Projects</a>
+            </li>
+            <li class="header_menu_link">
+              <a href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="About">
+      <div class="intro_div">
+        <h1 class="intro_name">
+          Hi I'm <br />
+          Vasudev Shekhar
+        </h1>
 
-  <script src="./index.js"></script>
-</body>
+        <p class="intro_p">
+          A Frontend Web Developer with primary focus on React and JavaScript. I
+          love to build new projects just to tickle my brain.
+        </p>
+      </div>
+    </section>
+    <section id="Projects">
+      <div class="Projects_div">
+        <h1 class="Project_header">Some of my projects</h1>
+        <div class="Project_div_content">
+          <div class="Projects_div_type">
+            <a href="https://netflix-frontend-hqo0.onrender.com/"
+              ><img
+                class="Projects_content_img"
+                src="./images/netflix.png"
+                alt=""
+            /></a>
+            <h3 class="Project_title">Netflix clone</h3>
+            <a href="https://github.com/VasudevShekhar/netflix-frontend">
+              <p class="Project_des">
+                <span>Click to view code:</span><br />
+                Tech-stack: Reactjs, Redux, Node, MongoDB, firebase. The front
+                end was built with React and RTK. The backend was built with
+                MongoDB, Express and Node
+              </p>
+            </a>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://firebase-chat-app-6lcy.onrender.com/"
+              ><img
+                class="Projects_content_img"
+                src="./images/chatapp.png"
+                alt=""
+            /></a>
+            <h3 class="Project_title">Chat App</h3>
+            <a href="https://github.com/VasudevShekhar/firebase-chat-app">
+              <p class="Project_des">
+                <span>Click to view code:</span><br />
+                Tech-stack: Reactjs, firebase, Sass, Npm, Responsive chat app
+                with messaging functions with react and Sass. State management
+                with useContext hook.
+              </p>
+            </a>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://technotes-31ea.onrender.com/"
+              ><img class="Projects_content_img" src="./images/dand.jpg" alt=""
+            /></a>
+            <h3 class="Project_title">Technotes App</h3>
+            <p class="Project_des">
+              The backend was built with MongoDB, Express and Node, with
+              authentication being handled by jwt and security with bcrypt. The
+              front end was built with React and React-Redux. Authorization was
+              built using jwt-decode and redux.
+            </p>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://tgpkhu.csb.app/"
+              ><img
+                class="Projects_content_img"
+                src="./images/keeperapp.jpg"
+                alt=""
+            /></a>
+            <h3 class="Project_title">Keeper App</h3>
+            <p class="Project_des">
+              Application to keep notes build using ReactJS
+            </p>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://github-user-finder-gray.vercel.app/"
+              ><img
+                class="Projects_content_img"
+                src="./images/githubuser.jpg"
+                alt=""
+            /></a>
+            <h3 class="Project_title">Github User Finder</h3>
+            <p class="Project_des">
+              Designed & built a the application for searching github users
+              using customized hooks and github API.
+            </p>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://breakingbadvdv.netlify.app/"
+              ><img
+                class="Projects_content_img"
+                src="./images/breakingbadscreen.png"
+                alt=""
+            /></a>
+            <h3 class="Project_title">Lets Play with APIs: Breaking Bad</h3>
+            <p class="Project_des">
+              Designed & built a the application using Axios and React-Hooks to
+              display characters of a Sci-fic...
+            </p>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://vasudevshekhar.github.io/Tip-Calculator/"
+              ><img
+                class="Projects_content_img"
+                src="./images/tipcalculator.jpg"
+                alt=""
+            /></a>
+            <h3 class="Project_title">Tip Calculator</h3>
+            <p class="Project_des">
+              It calculates how much tip you should give at a restaurant.
+            </p>
+          </div>
+          <div class="Projects_div_type">
+            <a href="https://vasudevshekhar.github.io/TinDog/"
+              ><img
+                class="Projects_content_img"
+                src="./images/tindog.jpg"
+                alt=""
+            /></a>
+            <h3 class="Project_title">TinDog Website</h3>
+            <p class="Project_des">
+              A tinder Like webpage for dogs. Built using HTML, CSS and
+              Bootstrap
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contacts">
+      <div class="social-heading">
+        <h2>Made with ❤️ in India</h2>
+      </div>
+      <div class="social">
+        <a
+          class="social_icon"
+          href="https://www.linkedin.com/in/vasudevshekhar/"
+          ><img src="./icons/linkedin-in.svg" alt="linkedin"
+        /></a>
+        <a class="social_icon" href="https://github.com/VasudevShekhar"
+          ><img src="./icons/github.svg" alt="github"
+        /></a>
+        <a class="social_icon" href="https://twitter.com/Vasudevshekharr"
+          ><img src="./icons/twitter.svg" alt="twitter"
+        /></a>
+      </div>
+    </footer>
 
+    <script src="./index.js"></script>
+  </body>
 </html>
