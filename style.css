@@ -208,20 +208,20 @@ a {
   }
 }
 .intro_name {
-  font-size: 2rem;
-  padding-top: 200px;
+  font-size: 3rem;
+  padding-top: 300px;
   color: blue;
 }
 @media only screen and (max-width: 37.5em) {
   .intro_name {
-    padding-top: 100px;
+    padding-top: 200px;
     font-size: 2rem;
     padding-bottom: 10px;
   }
 }
 @media only screen and (max-width: 56.255em) {
   .intro_name {
-    padding-top: 50px;
+    padding-top: 250px;
     font-size: 4rem;
     padding-bottom: 10px;
   }
